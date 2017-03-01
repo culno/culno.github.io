@@ -1,5 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-02-09T22:27:24+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
-</subtitle><entry><title type="html">My first blog</title><link href="/jekyll/2017/02/09/first-blog.html" rel="alternate" type="text/html" title="My first blog" /><published>2017-02-09T22:26:16+08:00</published><updated>2017-02-09T22:26:16+08:00</updated><id>/jekyll/2017/02/09/first-blog</id><content type="html" xml:base="/jekyll/2017/02/09/first-blog.html">&lt;p&gt;This is my first blog!&lt;/p&gt;</content><summary type="html">This is my first blog!</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2017/02/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-08T23:17:16+08:00</published><updated>2017-02-08T23:17:16+08:00</updated><id>/jekyll/update/2017/02/08/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2017/02/08/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-02T02:43:38+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
+</subtitle><entry><title type="html">巧用Charles Rewrite 实现hybrid真机开发</title><link href="/jekyll/2017/02/09/charles-rewrite.html" rel="alternate" type="text/html" title="巧用Charles Rewrite 实现hybrid真机开发" /><published>2017-02-09T22:26:16+08:00</published><updated>2017-02-09T22:26:16+08:00</updated><id>/jekyll/2017/02/09/charles-rewrite</id><content type="html" xml:base="/jekyll/2017/02/09/charles-rewrite.html">&lt;p&gt;作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
+在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!&lt;/p&gt;
+
+&lt;p&gt;但是…&lt;/p&gt;
+
+&lt;p&gt;最近喜欢上了mac….&lt;/p&gt;
+
+&lt;p&gt;没Fiddler? 哈哈,木问题,大Charles 来也!&lt;/p&gt;
+
+&lt;p&gt;———-正文分割线——–&lt;/p&gt;
+
+&lt;p&gt;真机(iPhone)上装有 uat环境测试包&lt;/p&gt;
+
+&lt;p&gt;是的!就是在测试包里 开发新功能!&lt;/p&gt;
+
+&lt;p&gt;项目代码背景:&lt;/p&gt;
+
+&lt;p&gt;front:
+    coffeescript + webpack(webpack-dev-server) + gulp +HybridBridge + …
+backend:
+    node + pm2 + tracer + dot + ….&lt;/p&gt;
+
+&lt;p&gt;部分页面纯frontend 渲染, 部分页面还得加上 后端node dot渲染.&lt;/p&gt;
+
+&lt;p&gt;因为 Hybrid app 有以下几个硬性要求:
+1.必须https 不然请求发不出去
+2.不能用除443 80 以外端口&lt;/p&gt;
+
+&lt;p&gt;所以最终解决办法是 使用 Charles Rewrite :
+1.https://xxx.com/ -&amp;gt; http://localhost:8080/
+2.将url里的端口删掉(webpack-dev-server用到的)  然后 https://xxx.com/publish/ -&amp;gt; http://localhost:3000/publish&lt;/p&gt;
+
+&lt;p&gt;———正文结束———–&lt;/p&gt;
+
+&lt;p&gt;总结:&lt;/p&gt;
+
+&lt;p&gt;最终解决方案很简单,不到几分钟就可以搞定. 但是由于一些挂件资料不知道,导致走了很多弯路 (尤其是那两个约束条件,最终是Charles里调试了好多才总结出的)&lt;/p&gt;
+
+&lt;p&gt;回头尝试另外一种更简单的解决办法….&lt;/p&gt;
+
+&lt;p&gt;对了,mac vpn 下 local IP 咋一直ping 不通呢??? 继续研究下…&lt;/p&gt;</content><summary type="html">作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
+在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!</summary></entry><entry><title type="html">My first blog</title><link href="/jekyll/2017/02/09/first-blog.html" rel="alternate" type="text/html" title="My first blog" /><published>2017-02-09T22:26:16+08:00</published><updated>2017-02-09T22:26:16+08:00</updated><id>/jekyll/2017/02/09/first-blog</id><content type="html" xml:base="/jekyll/2017/02/09/first-blog.html">&lt;p&gt;This is my first blog!&lt;/p&gt;</content><summary type="html">This is my first blog!</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2017/02/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-08T23:17:16+08:00</published><updated>2017-02-08T23:17:16+08:00</updated><id>/jekyll/update/2017/02/08/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2017/02/08/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

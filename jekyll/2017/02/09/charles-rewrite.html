@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>culno</title>
-  <meta name="description" content="Do not restrict yourself when you can fly!">
+  <title>巧用Charles Rewrite 实现hybrid真机开发</title>
+  <meta name="description" content="作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯. 在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/jekyll/2017/02/09/charles-rewrite.html">
   <link rel="alternate" type="application/rss+xml" title="culno" href="/feed.xml">
   
   
@@ -58,44 +58,61 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">巧用Charles Rewrite 实现hybrid真机开发</h1>
+    <p class="post-meta"><time datetime="2017-02-09T22:26:16+08:00" itemprop="datePublished">Feb 9, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
+在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!</p>
+
+<p>但是…</p>
+
+<p>最近喜欢上了mac….</p>
+
+<p>没Fiddler? 哈哈,木问题,大Charles 来也!</p>
+
+<p>———-正文分割线——–</p>
+
+<p>真机(iPhone)上装有 uat环境测试包</p>
+
+<p>是的!就是在测试包里 开发新功能!</p>
+
+<p>项目代码背景:</p>
+
+<p>front:
+    coffeescript + webpack(webpack-dev-server) + gulp +HybridBridge + …
+backend:
+    node + pm2 + tracer + dot + ….</p>
+
+<p>部分页面纯frontend 渲染, 部分页面还得加上 后端node dot渲染.</p>
+
+<p>因为 Hybrid app 有以下几个硬性要求:
+1.必须https 不然请求发不出去
+2.不能用除443 80 以外端口</p>
+
+<p>所以最终解决办法是 使用 Charles Rewrite :
+1.https://xxx.com/ -&gt; http://localhost:8080/
+2.将url里的端口删掉(webpack-dev-server用到的)  然后 https://xxx.com/publish/ -&gt; http://localhost:3000/publish</p>
+
+<p>———正文结束———–</p>
+
+<p>总结:</p>
+
+<p>最终解决方案很简单,不到几分钟就可以搞定. 但是由于一些挂件资料不知道,导致走了很多弯路 (尤其是那两个约束条件,最终是Charles里调试了好多才总结出的)</p>
+
+<p>回头尝试另外一种更简单的解决办法….</p>
+
+<p>对了,mac vpn 下 local IP 咋一直ping 不通呢??? 继续研究下…</p>
+
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Feb 9, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/2017/02/09/charles-rewrite.html">巧用Charles Rewrite 实现hybrid真机开发</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 9, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/2017/02/09/first-blog.html">My first blog</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 8, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/02/08/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>
