@@ -1,15 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T19:28:03+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
-</subtitle><entry><title type="html">Test</title><link href="/2017/03/05/test.html" rel="alternate" type="text/html" title="Test" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/2017/03/05/test</id><content type="html" xml:base="/2017/03/05/test.html">&lt;script&gt;
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement(&quot;script&quot;);
-  hm.src = &quot;https://hm.baidu.com/hm.js?e14d0b6be4e263657a419d4ee4e6718d&quot;;
-  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-&lt;/script&gt;
-
-&lt;p&gt;So tedious everytime I write a new blog.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T19:29:28+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
+</subtitle><entry><title type="html">Test</title><link href="/2017/03/05/test.html" rel="alternate" type="text/html" title="Test" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/2017/03/05/test</id><content type="html" xml:base="/2017/03/05/test.html">&lt;p&gt;So tedious everytime I write a new blog.
 So I just did some coding work to simplify it!
 So the current procedure to post a new blog is :&lt;/p&gt;
 
@@ -19,7 +9,9 @@ So the current procedure to post a new blog is :&lt;/p&gt;
 4.write content
 4.sh build-and-post.sh&lt;/p&gt;
 
-&lt;p&gt;Congratulations! hahaha…&lt;/p&gt;</content><summary type="html"></summary></entry><entry><title type="html">巧用Charles Rewrite 实现hybrid真机开发</title><link href="/jekyll/2017/03/02/charles-rewrite.html" rel="alternate" type="text/html" title="巧用Charles Rewrite 实现hybrid真机开发" /><published>2017-03-02T02:45:00+08:00</published><updated>2017-03-02T02:45:00+08:00</updated><id>/jekyll/2017/03/02/charles-rewrite</id><content type="html" xml:base="/jekyll/2017/03/02/charles-rewrite.html">&lt;script&gt;
+&lt;p&gt;Congratulations! hahaha…&lt;/p&gt;</content><summary type="html">So tedious everytime I write a new blog.
+So I just did some coding work to simplify it!
+So the current procedure to post a new blog is :</summary></entry><entry><title type="html">巧用Charles Rewrite 实现hybrid真机开发</title><link href="/jekyll/2017/03/02/charles-rewrite.html" rel="alternate" type="text/html" title="巧用Charles Rewrite 实现hybrid真机开发" /><published>2017-03-02T02:45:00+08:00</published><updated>2017-03-02T02:45:00+08:00</updated><id>/jekyll/2017/03/02/charles-rewrite</id><content type="html" xml:base="/jekyll/2017/03/02/charles-rewrite.html">&lt;script&gt;
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement(&quot;script&quot;);
