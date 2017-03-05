@@ -1,5 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T21:23:29+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
-</subtitle><entry><title type="html">Test</title><link href="/2017/03/05/test.html" rel="alternate" type="text/html" title="Test" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/2017/03/05/test</id><content type="html" xml:base="/2017/03/05/test.html">&lt;p&gt;So tedious everytime I write a new blog.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T22:28:51+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
+</subtitle><entry><title type="html">Abandon Setstate In React</title><link href="/react/2017/03/05/abandon-setState-in-React.html" rel="alternate" type="text/html" title="Abandon Setstate In React" /><published>2017-03-05T22:11:58+08:00</published><updated>2017-03-05T22:11:58+08:00</updated><id>/react/2017/03/05/abandon-setState-in-React</id><content type="html" xml:base="/react/2017/03/05/abandon-setState-in-React.html">&lt;p&gt;初学React 收到的第一个大礼包就是 state 了.所有的乱七八糟对的状态改变统一归state管理,然后一有变化就高性能通过虚拟dom机制渲染页面.听起来多么美妙!&lt;/p&gt;
+
+&lt;p&gt;wow!&lt;/p&gt;
+
+&lt;p&gt;然而,不能过分依赖setState 方法. 虽然看上去setState像极了一个同步方法,但&lt;/p&gt;
+
+&lt;p&gt;其实它不保证同步!!!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;setState() does not immediately mutate this.state but creates a pending state transition. Accessing this.state after calling this method can potentially return the existing value.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There is no guarantee of synchronous operation of calls to setState and calls may be batched for performance gains.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;setState() will always lead to a re-render unless shouldComponentUpdate() returns false. If mutable objects are being used and conditional rendering logic cannot be implemented in shouldComponentUpdate(), calling setState() only when the new state differs from the previous state will avoid unnecessary re-renders.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;LOOK! 人家官网都说了,不立即修改值!(但是我们肯定会re-render 哦!^_^)&lt;/p&gt;
+
+&lt;p&gt;呃呃,好吧. 涨知识了.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;那该以什么样的正确姿势使用setState 捏?
+ &lt;br /&gt;哈哈,直接state.xx = xx 不完了么.&lt;/p&gt;</content><summary type="html">初学React 收到的第一个大礼包就是 state 了.所有的乱七八糟对的状态改变统一归state管理,然后一有变化就高性能通过虚拟dom机制渲染页面.听起来多么美妙!</summary></entry><entry><title type="html">Test</title><link href="/2017/03/05/test.html" rel="alternate" type="text/html" title="Test" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/2017/03/05/test</id><content type="html" xml:base="/2017/03/05/test.html">&lt;p&gt;So tedious everytime I write a new blog.
 So I just did some coding work to simplify it!
 So the current procedure to post a new blog is :&lt;/p&gt;
 

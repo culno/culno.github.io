@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>巧用Charles Rewrite 实现hybrid真机开发</title>
-  <meta name="description" content="作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯. 在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!">
+  <title>Abandon Setstate In React</title>
+  <meta name="description" content="初学React 收到的第一个大礼包就是 state 了.所有的乱七八糟对的状态改变统一归state管理,然后一有变化就高性能通过虚拟dom机制渲染页面.听起来多么美妙!">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/jekyll/2017/03/02/charles-rewrite.html">
+  <link rel="canonical" href="/react/2017/03/05/abandon-setState-in-React.html">
   <link rel="alternate" type="application/rss+xml" title="culno" href="/feed.xml">
   
   
@@ -44,52 +44,38 @@ var _hmt = _hmt || [];
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">巧用Charles Rewrite 实现hybrid真机开发</h1>
-    <p class="post-meta"><time datetime="2017-03-02T02:45:00+08:00" itemprop="datePublished">Mar 2, 2017</time></p>
+    <h1 class="post-title" itemprop="name headline">Abandon Setstate In React</h1>
+    <p class="post-meta"><time datetime="2017-03-05T22:11:58+08:00" itemprop="datePublished">Mar 5, 2017</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
-在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!</p>
+    <p>初学React 收到的第一个大礼包就是 state 了.所有的乱七八糟对的状态改变统一归state管理,然后一有变化就高性能通过虚拟dom机制渲染页面.听起来多么美妙!</p>
 
-<p>但是…</p>
+<p>wow!</p>
 
-<p>最近喜欢上了mac….</p>
+<p>然而,不能过分依赖setState 方法. 虽然看上去setState像极了一个同步方法,但</p>
 
-<p>没Fiddler? 哈哈,木问题,大Charles 来也!</p>
+<p>其实它不保证同步!!!</p>
 
-<p>———-正文分割线——–</p>
+<blockquote>
+  <p>setState() does not immediately mutate this.state but creates a pending state transition. Accessing this.state after calling this method can potentially return the existing value.</p>
+</blockquote>
 
-<p>真机(iPhone)上装有 uat环境测试包</p>
+<blockquote>
+  <p>There is no guarantee of synchronous operation of calls to setState and calls may be batched for performance gains.</p>
+</blockquote>
 
-<p>是的!就是在测试包里 开发新功能!</p>
+<blockquote>
+  <p>setState() will always lead to a re-render unless shouldComponentUpdate() returns false. If mutable objects are being used and conditional rendering logic cannot be implemented in shouldComponentUpdate(), calling setState() only when the new state differs from the previous state will avoid unnecessary re-renders.</p>
+</blockquote>
 
-<p>项目代码背景:</p>
+<p>LOOK! 人家官网都说了,不立即修改值!(但是我们肯定会re-render 哦!^_^)</p>
 
-<p>front:
-    coffeescript + webpack(webpack-dev-server) + gulp +HybridBridge + …
-backend:
-    node + pm2 + tracer + dot + ….</p>
+<p>呃呃,好吧. 涨知识了.</p>
 
-<p>部分页面纯frontend 渲染, 部分页面还得加上 后端node dot渲染.</p>
-
-<p>因为 Hybrid app 有以下几个硬性要求:
-1.必须https 不然请求发不出去
-2.不能用除443 80 以外端口</p>
-
-<p>所以最终解决办法是 使用 Charles Rewrite :
-1.https://xxx.com/ -&gt; http://localhost:8080/
-2.将url里的端口删掉(webpack-dev-server用到的)  然后 https://xxx.com/publish/ -&gt; http://localhost:3000/publish</p>
-
-<p>———正文结束———–</p>
-
-<p>总结:</p>
-
-<p>最终解决方案很简单,不到几分钟就可以搞定. 但是由于一些挂件资料不知道,导致走了很多弯路 (尤其是那两个约束条件,最终是Charles里调试了好多才总结出的)</p>
-
-<p>回头尝试另外一种更简单的解决办法….</p>
-
-<p>对了,mac vpn 下 local IP 咋一直ping 不通呢??? 继续研究下…</p>
+<hr />
+<p>那该以什么样的正确姿势使用setState 捏?
+ <br />哈哈,直接state.xx = xx 不完了么.</p>
 
 
   </div>
