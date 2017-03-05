@@ -1,5 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T19:07:06+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
-</subtitle><entry><title type="html">Test</title><link href="/2017/03/05/test.html" rel="alternate" type="text/html" title="Test" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/2017/03/05/test</id><content type="html" xml:base="/2017/03/05/test.html">&lt;p&gt;So tedious everytime I write a new blog.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T19:28:03+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
+</subtitle><entry><title type="html">Test</title><link href="/2017/03/05/test.html" rel="alternate" type="text/html" title="Test" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/2017/03/05/test</id><content type="html" xml:base="/2017/03/05/test.html">&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?e14d0b6be4e263657a419d4ee4e6718d&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+
+&lt;p&gt;So tedious everytime I write a new blog.
 So I just did some coding work to simplify it!
 So the current procedure to post a new blog is :&lt;/p&gt;
 
@@ -9,9 +19,17 @@ So the current procedure to post a new blog is :&lt;/p&gt;
 4.write content
 4.sh build-and-post.sh&lt;/p&gt;
 
-&lt;p&gt;Congratulations! hahaha…&lt;/p&gt;</content><summary type="html">So tedious everytime I write a new blog.
-So I just did some coding work to simplify it!
-So the current procedure to post a new blog is :</summary></entry><entry><title type="html">巧用Charles Rewrite 实现hybrid真机开发</title><link href="/jekyll/2017/03/02/charles-rewrite.html" rel="alternate" type="text/html" title="巧用Charles Rewrite 实现hybrid真机开发" /><published>2017-03-02T02:45:00+08:00</published><updated>2017-03-02T02:45:00+08:00</updated><id>/jekyll/2017/03/02/charles-rewrite</id><content type="html" xml:base="/jekyll/2017/03/02/charles-rewrite.html">&lt;p&gt;作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
+&lt;p&gt;Congratulations! hahaha…&lt;/p&gt;</content><summary type="html"></summary></entry><entry><title type="html">巧用Charles Rewrite 实现hybrid真机开发</title><link href="/jekyll/2017/03/02/charles-rewrite.html" rel="alternate" type="text/html" title="巧用Charles Rewrite 实现hybrid真机开发" /><published>2017-03-02T02:45:00+08:00</published><updated>2017-03-02T02:45:00+08:00</updated><id>/jekyll/2017/03/02/charles-rewrite</id><content type="html" xml:base="/jekyll/2017/03/02/charles-rewrite.html">&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?e14d0b6be4e263657a419d4ee4e6718d&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+
+&lt;p&gt;作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
 在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!&lt;/p&gt;
 
 &lt;p&gt;但是…&lt;/p&gt;
@@ -51,8 +69,27 @@ backend:
 
 &lt;p&gt;回头尝试另外一种更简单的解决办法….&lt;/p&gt;
 
-&lt;p&gt;对了,mac vpn 下 local IP 咋一直ping 不通呢??? 继续研究下…&lt;/p&gt;</content><summary type="html">作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
-在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!</summary></entry><entry><title type="html">My first blog</title><link href="/jekyll/2017/02/09/first-blog.html" rel="alternate" type="text/html" title="My first blog" /><published>2017-02-09T22:26:16+08:00</published><updated>2017-02-09T22:26:16+08:00</updated><id>/jekyll/2017/02/09/first-blog</id><content type="html" xml:base="/jekyll/2017/02/09/first-blog.html">&lt;p&gt;This is my first blog!&lt;/p&gt;</content><summary type="html">This is my first blog!</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2017/02/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-08T23:17:16+08:00</published><updated>2017-02-08T23:17:16+08:00</updated><id>/jekyll/update/2017/02/08/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2017/02/08/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;对了,mac vpn 下 local IP 咋一直ping 不通呢??? 继续研究下…&lt;/p&gt;</content><summary type="html"></summary></entry><entry><title type="html">My first blog</title><link href="/jekyll/2017/02/09/first-blog.html" rel="alternate" type="text/html" title="My first blog" /><published>2017-02-09T22:26:16+08:00</published><updated>2017-02-09T22:26:16+08:00</updated><id>/jekyll/2017/02/09/first-blog</id><content type="html" xml:base="/jekyll/2017/02/09/first-blog.html">&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?e14d0b6be4e263657a419d4ee4e6718d&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+
+&lt;p&gt;This is my first blog!&lt;/p&gt;</content><summary type="html"></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2017/02/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-08T23:17:16+08:00</published><updated>2017-02-08T23:17:16+08:00</updated><id>/jekyll/update/2017/02/08/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2017/02/08/welcome-to-jekyll.html">&lt;script&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement(&quot;script&quot;);
+  hm.src = &quot;https://hm.baidu.com/hm.js?e14d0b6be4e263657a419d4ee4e6718d&quot;;
+  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+
+&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -64,4 +101,4 @@ backend:
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html"></summary></entry></feed>
