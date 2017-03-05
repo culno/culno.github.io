@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T18:55:14+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
-</subtitle><entry><title type="html">test auto post</title><link href="/jekyll/2017/03/05/test.html" rel="alternate" type="text/html" title="test auto post" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/jekyll/2017/03/05/test</id><content type="html" xml:base="/jekyll/2017/03/05/test.html">&lt;p&gt;haha&lt;/p&gt;</content><summary type="html">haha</summary></entry><entry><title type="html">巧用Charles Rewrite 实现hybrid真机开发</title><link href="/jekyll/2017/03/02/charles-rewrite.html" rel="alternate" type="text/html" title="巧用Charles Rewrite 实现hybrid真机开发" /><published>2017-03-02T02:45:00+08:00</published><updated>2017-03-02T02:45:00+08:00</updated><id>/jekyll/2017/03/02/charles-rewrite</id><content type="html" xml:base="/jekyll/2017/03/02/charles-rewrite.html">&lt;p&gt;作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-03-05T19:03:21+08:00</updated><id>//</id><title type="html">culno</title><subtitle>Do not restrict yourself when you can fly!
+</subtitle><entry><title type="html">test auto post</title><link href="/jekyll/2017/03/05/test.html" rel="alternate" type="text/html" title="test auto post" /><published>2017-03-05T18:54:43+08:00</published><updated>2017-03-05T18:54:43+08:00</updated><id>/jekyll/2017/03/05/test</id><content type="html" xml:base="/jekyll/2017/03/05/test.html">&lt;p&gt;So tedious everytime I write a new blog.
+So I just did some coding work to simplify it!
+So the current procedure to post a new blog is :&lt;/p&gt;
+
+&lt;p&gt;1.sh new.sh {title}
+2.sh time.sh
+3.replace the datetime in the new blog (just paste!)
+4.write content
+4.sh build-and-post.sh&lt;/p&gt;
+
+&lt;p&gt;Congratulations! hahaha…&lt;/p&gt;</content><summary type="html">So tedious everytime I write a new blog.
+So I just did some coding work to simplify it!
+So the current procedure to post a new blog is :</summary></entry><entry><title type="html">巧用Charles Rewrite 实现hybrid真机开发</title><link href="/jekyll/2017/03/02/charles-rewrite.html" rel="alternate" type="text/html" title="巧用Charles Rewrite 实现hybrid真机开发" /><published>2017-03-02T02:45:00+08:00</published><updated>2017-03-02T02:45:00+08:00</updated><id>/jekyll/2017/03/02/charles-rewrite</id><content type="html" xml:base="/jekyll/2017/03/02/charles-rewrite.html">&lt;p&gt;作为一名”实践是检验真理的唯一标准”的拥护者,偶hybrid开发时有个 边撸代码边看真机效果 的好习惯.
 在我们大Windows上开发不必多言,Fiddler神器 谁用谁知道! AutoResponse 功能重定义功能简直不能更爽!&lt;/p&gt;
 
 &lt;p&gt;但是…&lt;/p&gt;
