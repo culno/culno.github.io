@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>culno</title>
-  <meta name="description" content="Do not restrict yourself when you can fly!">
+  <title>Transfer Data From Outer Using Componentwillreceiveprops</title>
+  <meta name="description" content="我们知道,可以通过更改props来设置子module 初始值,但是想在外部环境更新时同时更新子模块的状态,进而重新渲染子模块,该怎么办呢?">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/react/2017/03/05/transfer-data-from-outer-using-componentWillReceiveProps.html">
   <link rel="alternate" type="application/rss+xml" title="culno" href="/feed.xml">
   
   
@@ -41,68 +41,37 @@ var _hmt = _hmt || [];
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Transfer Data From Outer Using Componentwillreceiveprops</h1>
+    <p class="post-meta"><time datetime="2017-03-05T23:48:04+08:00" itemprop="datePublished">Mar 5, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>我们知道,可以通过更改props来设置子module 初始值,但是想在外部环境更新时同时更新子模块的状态,进而重新渲染子模块,该怎么办呢?</p>
+
+<p>The answer is:componentWillReceiveProps 方法.</p>
+
+<blockquote>
+  <p>Invoked when a component is receiving new props. This method is not called for the initial render.</p>
+</blockquote>
+
+<blockquote>
+  <p>Use this as an opportunity to react to a prop transition before render() is called by updating the state using this.setState(). The old props can be accessed via this.props. Calling this.setState() within this function will not trigger an additional render.</p>
+</blockquote>
+
+<p>example:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">componentWillReceiveProps</span><span class="p">(){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">selected</span><span class="p">:</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">sequence</span><span class="p">});</span>
+<span class="p">}</span></code></pre></figure>
+
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Mar 5, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/react/2017/03/05/transfer-data-from-outer-using-componentWillReceiveProps.html">Transfer Data From Outer Using Componentwillreceiveprops</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 5, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/react/2017/03/05/abandon-setState-in-React.html">Abandon Setstate In React</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 5, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/2017/03/05/test.html">Test</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 2, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/2017/03/02/charles-rewrite.html">巧用Charles Rewrite 实现hybrid真机开发</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 9, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/2017/02/09/first-blog.html">My first blog</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 8, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/02/08/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>
